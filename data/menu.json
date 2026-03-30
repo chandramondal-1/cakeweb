@@ -1,0 +1,406 @@
+[
+  {
+    "slug": "cakes",
+    "title": "Celebration Cakes",
+    "description": "Signature celebration cakes for birthdays, gifting, and milestone moments.",
+    "items": [
+      {
+        "id": "cake-black-forest",
+        "name": "Black Forest Celebration Cake",
+        "price": 480,
+        "unit": "500 gm",
+        "description": "Classic chocolate sponge, whipped cream, and cherry-style celebration finish.",
+        "tags": ["birthday", "party", "best seller"],
+        "image": "/public/images/rose-cake.jpeg"
+      },
+      {
+        "id": "cake-vanilla",
+        "name": "Vanilla Celebration Cake",
+        "price": 480,
+        "unit": "500 gm",
+        "description": "Soft vanilla sponge with balanced cream and a crowd-friendly flavor profile.",
+        "tags": ["vanilla", "celebration"],
+        "image": "/public/images/dome-cake.jpeg"
+      },
+      {
+        "id": "cake-pineapple",
+        "name": "Pineapple Celebration Cake",
+        "price": 500,
+        "unit": "500 gm",
+        "description": "Light pineapple notes with fluffy sponge, ideal for family gatherings.",
+        "tags": ["fruit", "party"],
+        "image": "/public/images/pastry-slice.jpeg"
+      },
+      {
+        "id": "cake-butterscotch",
+        "name": "Butterscotch Celebration Cake",
+        "price": 540,
+        "unit": "500 gm",
+        "description": "Crunchy butterscotch accents and caramel warmth for celebration tables.",
+        "tags": ["best seller", "caramel"],
+        "image": "/public/images/rose-cake.jpeg"
+      },
+      {
+        "id": "cake-strawberry",
+        "name": "Strawberry Celebration Cake",
+        "price": 540,
+        "unit": "500 gm",
+        "description": "Fresh strawberry-inspired profile with a polished celebration finish.",
+        "tags": ["fruit", "anniversary"],
+        "image": "/public/images/dome-cake.jpeg"
+      },
+      {
+        "id": "cake-blueberry",
+        "name": "Blueberry Celebration Cake",
+        "price": 600,
+        "unit": "500 gm",
+        "description": "Blueberry-forward premium cake with a rich fruit finish.",
+        "tags": ["premium", "best seller"],
+        "image": "/public/images/pastry-slice.jpeg"
+      },
+      {
+        "id": "cake-swiss-chocolate",
+        "name": "Swiss Chocolate Celebration Cake",
+        "price": 600,
+        "unit": "500 gm",
+        "description": "Deep cocoa flavor for chocolate-first celebrations.",
+        "tags": ["chocolate", "premium"],
+        "image": "/public/images/chocolate-muffins-large.jpeg"
+      },
+      {
+        "id": "cake-truffle",
+        "name": "Chocolate Truffle Celebration Cake",
+        "price": 660,
+        "unit": "500 gm",
+        "description": "Luxurious truffle frosting and rich chocolate layering for indulgent occasions.",
+        "tags": ["signature", "best seller"],
+        "image": "/public/images/chocolate-muffins.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "pastries",
+    "title": "Pastries & Cheesecakes",
+    "description": "Counter-fresh pastries and dessert slices for individual indulgence.",
+    "items": [
+      {
+        "id": "pastry-butterscotch",
+        "name": "Butterscotch Pastry",
+        "price": 75,
+        "unit": "slice",
+        "description": "Creamy butterscotch pastry for a quick dessert stop.",
+        "tags": ["pastry"],
+        "image": "/public/images/pastry-slice.jpeg"
+      },
+      {
+        "id": "pastry-fruit-mix",
+        "name": "Fruit Mix Pastry",
+        "price": 85,
+        "unit": "slice",
+        "description": "Fresh fruit notes layered into a colorful pastry slice.",
+        "tags": ["fruit", "pastry"],
+        "image": "/public/images/pastry-slice.jpeg"
+      },
+      {
+        "id": "pastry-blueberry-cheese",
+        "name": "Blueberry Cheese Pastry",
+        "price": 120,
+        "unit": "slice",
+        "description": "Smooth cheesecake-style pastry with blueberry flavor.",
+        "tags": ["cheesecake", "premium"],
+        "image": "/public/images/dome-cake.jpeg"
+      },
+      {
+        "id": "pastry-nutella-cheese",
+        "name": "Nutella Cheese Pastry",
+        "price": 120,
+        "unit": "slice",
+        "description": "Chocolate-hazelnut richness with a creamy cheesecake profile.",
+        "tags": ["nutella", "premium"],
+        "image": "/public/images/dome-cake.jpeg"
+      },
+      {
+        "id": "pastry-new-york-cheesecake",
+        "name": "New York Cheesecake",
+        "price": 140,
+        "unit": "slice",
+        "description": "Dense, creamy cheesecake with a clean premium finish.",
+        "tags": ["cheesecake", "signature"],
+        "image": "/public/images/pastry-slice.jpeg"
+      },
+      {
+        "id": "pastry-biscoff-cheesecake",
+        "name": "Biscoff Cheesecake",
+        "price": 140,
+        "unit": "slice",
+        "description": "Biscoff-spiced cheesecake that pairs beautifully with coffee.",
+        "tags": ["biscoff", "best seller"],
+        "image": "/public/images/pastry-slice.jpeg"
+      },
+      {
+        "id": "pastry-chocolate-truffle",
+        "name": "Chocolate Truffle Pastry",
+        "price": 110,
+        "unit": "slice",
+        "description": "Rich truffle pastry for intense chocolate cravings.",
+        "tags": ["chocolate", "premium"],
+        "image": "/public/images/chocolate-muffins.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "bakery",
+    "title": "Cookies, Muffins & Dry Cakes",
+    "description": "Takeaway-friendly bakery staples for gifting and daily snacking.",
+    "items": [
+      {
+        "id": "cookie-butter-pack",
+        "name": "Butter Cookies Pack",
+        "price": 150,
+        "unit": "200 gm",
+        "description": "House butter cookies in a travel-friendly tub, great for tea-time gifting.",
+        "tags": ["cookies", "giftable"],
+        "image": "/public/images/cookies-pack-large.jpeg"
+      },
+      {
+        "id": "muffin-chocolate",
+        "name": "Chocolate Muffin",
+        "price": 75,
+        "unit": "piece",
+        "description": "Chocolate muffin topped with chunks and nut accents.",
+        "tags": ["muffin", "best seller"],
+        "image": "/public/images/chocolate-muffins-large.jpeg"
+      },
+      {
+        "id": "drycake-mawa",
+        "name": "Mawa Cake",
+        "price": 55,
+        "unit": "slice",
+        "description": "Dense tea-time dry cake with a mellow milky richness.",
+        "tags": ["dry cake"],
+        "image": "/public/images/cookies-pack.jpeg"
+      },
+      {
+        "id": "drycake-date-walnut",
+        "name": "Date Walnut Cake",
+        "price": 100,
+        "unit": "slice",
+        "description": "Rich dry cake with date sweetness and walnut crunch.",
+        "tags": ["dry cake", "premium"],
+        "image": "/public/images/cookies-pack.jpeg"
+      },
+      {
+        "id": "dessert-choco-lava",
+        "name": "Choco Lava",
+        "price": 65,
+        "unit": "piece",
+        "description": "Warm, indulgent chocolate dessert for a quick sweet hit.",
+        "tags": ["dessert", "hot"],
+        "image": "/public/images/dome-cake.jpeg"
+      },
+      {
+        "id": "dessert-brownie",
+        "name": "Brownie",
+        "price": 70,
+        "unit": "piece",
+        "description": "Rich brownie square for chocolate lovers.",
+        "tags": ["dessert", "chocolate"],
+        "image": "/public/images/chocolate-muffins.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "drinks",
+    "title": "Coffee, Shakes & Mocktails",
+    "description": "Cafe staples for dine-in, catch-ups, and quick cool-downs.",
+    "items": [
+      {
+        "id": "drink-cappuccino",
+        "name": "Cappuccino",
+        "price": 150,
+        "unit": "cup",
+        "description": "Foamy coffeehouse cappuccino for a classic cafe moment.",
+        "tags": ["coffee", "hot"],
+        "image": "/public/images/menu-card-drinks.jpeg"
+      },
+      {
+        "id": "drink-cafe-latte",
+        "name": "Cafe Latte",
+        "price": 170,
+        "unit": "cup",
+        "description": "Milky espresso balance with a smooth cafe finish.",
+        "tags": ["coffee", "hot"],
+        "image": "/public/images/menu-card-drinks.jpeg"
+      },
+      {
+        "id": "drink-hot-chocolate",
+        "name": "Hot Chocolate",
+        "price": 110,
+        "unit": "cup",
+        "description": "Comforting chocolate drink for slow evenings and rainy weather.",
+        "tags": ["hot", "chocolate"],
+        "image": "/public/images/menu-card-drinks.jpeg"
+      },
+      {
+        "id": "drink-classic-cold-coffee",
+        "name": "Classic Cold Coffee",
+        "price": 160,
+        "unit": "glass",
+        "description": "Creamy cafe-style cold coffee with a familiar crowd-pleasing profile.",
+        "tags": ["cold coffee"],
+        "image": "/public/images/menu-card-drinks.jpeg"
+      },
+      {
+        "id": "drink-truffle-cold-coffee",
+        "name": "Truffle Cold Coffee",
+        "price": 180,
+        "unit": "glass",
+        "description": "Chocolate-led cold coffee with a rich dessert-like finish.",
+        "tags": ["cold coffee", "premium"],
+        "image": "/public/images/menu-card-drinks.jpeg"
+      },
+      {
+        "id": "drink-nutella-cold-coffee",
+        "name": "Nutella Cold Coffee",
+        "price": 180,
+        "unit": "glass",
+        "description": "Nutella-inspired signature cold coffee for indulgent cafe sessions.",
+        "tags": ["cold coffee", "best seller"],
+        "image": "/public/images/menu-card-drinks.jpeg"
+      },
+      {
+        "id": "drink-oreo-milk-shake",
+        "name": "Oreo Milk Shake",
+        "price": 130,
+        "unit": "glass",
+        "description": "Thick shake blended with Oreo-style cookie flavor.",
+        "tags": ["shake"],
+        "image": "/public/images/menu-card-drinks.jpeg"
+      },
+      {
+        "id": "drink-biscoff-milk-shake",
+        "name": "Biscoff Milk Shake",
+        "price": 180,
+        "unit": "glass",
+        "description": "Biscoff-spiced milk shake with dessert-shop richness.",
+        "tags": ["shake", "premium"],
+        "image": "/public/images/menu-card-drinks.jpeg"
+      },
+      {
+        "id": "drink-virgin-mojito",
+        "name": "Virgin Mojito",
+        "price": 90,
+        "unit": "glass",
+        "description": "Refreshing cafe cooler for afternoon hangouts.",
+        "tags": ["mocktail"],
+        "image": "/public/images/menu-card-drinks.jpeg"
+      },
+      {
+        "id": "drink-blue-lagoon",
+        "name": "Blue Lagoon",
+        "price": 110,
+        "unit": "glass",
+        "description": "Bright, sweet mocktail with a striking color profile.",
+        "tags": ["mocktail"],
+        "image": "/public/images/menu-card-drinks.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "savories",
+    "title": "Savory Cafe Bites",
+    "description": "Quick-fill sandwiches, puffs, pizza, and cafe plates.",
+    "items": [
+      {
+        "id": "snack-french-fries",
+        "name": "French Fries",
+        "price": 100,
+        "unit": "plate",
+        "description": "Golden fries for easy sharing during coffee breaks.",
+        "tags": ["snack"],
+        "image": "/public/images/samosa-snack.jpeg"
+      },
+      {
+        "id": "snack-bruschetta",
+        "name": "Bruschetta",
+        "price": 150,
+        "unit": "plate",
+        "description": "Cafe-style bruschetta that pairs well with cold drinks.",
+        "tags": ["starter"],
+        "image": "/public/images/samosa-snack.jpeg"
+      },
+      {
+        "id": "snack-chilli-cheese-toast",
+        "name": "Chilli Cheese Toast",
+        "price": 100,
+        "unit": "plate",
+        "description": "Cheesy toast with a light spicy kick.",
+        "tags": ["toast"],
+        "image": "/public/images/puff-pastry.jpeg"
+      },
+      {
+        "id": "sandwich-cheese-corn",
+        "name": "Cheese Corn Sandwich",
+        "price": 140,
+        "unit": "plate",
+        "description": "Creamy cheese and corn filling for a comforting cafe sandwich.",
+        "tags": ["sandwich"],
+        "image": "/public/images/puff-pastry.jpeg"
+      },
+      {
+        "id": "sandwich-mumbai-veg",
+        "name": "Mumbai Veg Sandwich",
+        "price": 120,
+        "unit": "plate",
+        "description": "Street-style veg sandwich adapted for the cafe menu.",
+        "tags": ["sandwich", "veg"],
+        "image": "/public/images/puff-pastry.jpeg"
+      },
+      {
+        "id": "sandwich-chicken-grilled",
+        "name": "Chicken Grilled Sandwich",
+        "price": 150,
+        "unit": "plate",
+        "description": "Grilled chicken sandwich for a more filling savory option.",
+        "tags": ["sandwich", "chicken"],
+        "image": "/public/images/puff-pastry.jpeg"
+      },
+      {
+        "id": "pizza-veggi-delight",
+        "name": "Veggi Delight Pizza",
+        "price": 200,
+        "unit": "7.5 inch",
+        "description": "Quick cafe pizza with a veg topping mix.",
+        "tags": ["pizza", "veg"],
+        "image": "/public/images/puff-pastry.jpeg"
+      },
+      {
+        "id": "pizza-chicken-tikka",
+        "name": "Chicken Tikka Pizza",
+        "price": 220,
+        "unit": "7.5 inch",
+        "description": "Flavorful chicken tikka pizza for cafe sharing or solo meals.",
+        "tags": ["pizza", "best seller"],
+        "image": "/public/images/puff-pastry.jpeg"
+      },
+      {
+        "id": "puff-chicken",
+        "name": "Chicken Puff",
+        "price": 60,
+        "unit": "piece",
+        "description": "Flaky puff pastry with savory chicken filling.",
+        "tags": ["puff", "chicken"],
+        "image": "/public/images/puff-pastry.jpeg"
+      },
+      {
+        "id": "puff-paneer",
+        "name": "Paneer Puff",
+        "price": 60,
+        "unit": "piece",
+        "description": "Golden puff layered around a spiced paneer filling.",
+        "tags": ["puff", "paneer"],
+        "image": "/public/images/puff-pastry.jpeg"
+      }
+    ]
+  }
+]

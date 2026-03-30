@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" data-site-root=".">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vanilla Bean | Cakes, Cafe, and Custom Orders</title>
+    <meta
+      name="description"
+      content="The Vanilla Bean is a premium bakery and cafe in Durgapur for celebration cakes, pastries, coffee, cafe bites, and custom cake orders."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./public/css/styles.css?v=20260329b">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell">
+        <a class="brand-mark" href="./index.html">
+          <div class="brand-mark__seal">VB</div>
+          <div class="brand-mark__text">
+            <strong data-brand-name>The Vanilla Bean</strong>
+            <span data-brand-tagline>Fresh Bake and Cafe</span>
+          </div>
+        </a>
+
+        <nav class="site-nav" data-site-nav>
+          <a href="./index.html" data-nav-link>Home</a>
+          <a href="./about/index.html" data-nav-link>About</a>
+          <a href="./menu/index.html" data-nav-link>Menu</a>
+          <a href="./gallery/index.html" data-nav-link>Gallery</a>
+          <a href="./order/index.html" data-nav-link>Order</a>
+          <a href="./track/index.html" data-nav-link>Track</a>
+          <a href="./dashboard/index.html" data-nav-link>Dashboard</a>
+          <a href="./offers/index.html" data-nav-link>Offers</a>
+          <a href="./contact/index.html" data-nav-link>Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="button button-primary" href="./order/index.html">Order Now</a>
+          <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="page-shell hero-grid">
+          <div class="hero-copy" data-reveal>
+            <div class="hero-kicker">
+              <span>Custom cakes</span>
+              <span>Cafe menu</span>
+              <span>Same-day delivery</span>
+            </div>
+            <h1 data-hero-title>Crafting Sweet Memories In Durgapur</h1>
+            <p data-hero-subtitle>
+              From celebration cakes to coffee breaks, The Vanilla Bean brings premium bakes,
+              custom cake artistry, and warm cafe energy into every order.
+            </p>
+
+            <div class="button-row">
+              <a class="button button-primary" href="./order/index.html">Order Cake</a>
+              <a class="button button-secondary" href="#builder">Customize Cake</a>
+            </div>
+
+            <div class="hero-points">
+              <article class="hero-point">
+                <strong>Location</strong>
+                <span data-location-text>A/7, Abanindranath Bithi, City Centre, Durgapur</span>
+              </article>
+              <article class="hero-point">
+                <strong>Hours</strong>
+                <span data-hours-text>Open daily, 9:00 AM - 10:30 PM</span>
+              </article>
+              <article class="hero-point">
+                <strong>Delivery</strong>
+                <span data-delivery-note>Same-day delivery is available on selected cakes and cafe favorites.</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-media" data-reveal>
+            <div class="hero-media__grid">
+              <div class="hero-media__primary">
+                <img src="./public/images/storefront-night.jpeg" alt="The Vanilla Bean storefront at night">
+                <div class="floating-card floating-card--top">
+                  <strong>Celebration-first bakery</strong>
+                  <span>Custom cakes, pastries, cafe bites, and a polished local brand experience.</span>
+                </div>
+              </div>
+
+              <div class="hero-media__stack">
+                <img src="./public/images/interior-celebration.jpeg" alt="The Vanilla Bean interior seating area">
+                <img src="./public/images/rose-cake.jpeg" alt="Signature Vanilla Bean cake">
+              </div>
+            </div>
+
+            <div class="floating-card floating-card--bottom">
+              <strong>Fast local ordering</strong>
+              <span>Place an order, get a tracking ID instantly, and follow the request through the site.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="page-shell">
+          <div class="stats-grid" data-stats></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Occasions and categories</span>
+              <h2>Everything from birthday centerpieces to coffee-run comfort.</h2>
+            </div>
+            <p class="lead-copy">
+              The Vanilla Bean is built for two moods at once: milestone celebrations and casual
+              everyday indulgence. The site reflects both.
+            </p>
+          </div>
+
+          <div class="category-grid" data-categories></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Best sellers</span>
+              <h2>Signature cakes, cold coffee, and cafe picks guests come back for.</h2>
+            </div>
+            <a class="button button-ghost" href="./menu/index.html">See full menu</a>
+          </div>
+
+          <div class="menu-showcase">
+            <div class="menu-scroller" data-best-sellers></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="builder">
+        <div class="page-shell builder-grid">
+          <div class="form-card" data-reveal>
+            <span class="eyebrow">Custom cake builder</span>
+            <h3>Plan the cake before you order it.</h3>
+            <p class="helper">
+              This live preview gives customers a premium starting point before moving into the full
+              order form.
+            </p>
+
+            <form class="field-grid" data-builder-form>
+              <div class="field">
+                <label for="builder-shape">Cake shape</label>
+                <select id="builder-shape" name="shape">
+                  <option value="round" selected>round</option>
+                  <option value="square">square</option>
+                  <option value="heart">heart</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="builder-size">Cake size</label>
+                <select id="builder-size" name="size">
+                  <option>0.5 kg</option>
+                  <option selected>1 kg</option>
+                  <option>1.5 kg</option>
+                  <option>2 kg</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="builder-flavour">Flavour</label>
+                <select id="builder-flavour" name="flavour">
+                  <option value="vanilla" selected>vanilla</option>
+                  <option value="chocolate">chocolate</option>
+                  <option value="red velvet">red velvet</option>
+                  <option value="blueberry">blueberry</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="builder-cream">Cream finish</label>
+                <select id="builder-cream" name="cream">
+                  <option value="whipped cream" selected>whipped cream</option>
+                  <option value="buttercream">buttercream</option>
+                  <option value="fondant">fondant</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="builder-theme">Theme</label>
+                <select id="builder-theme" name="theme">
+                  <option value="minimal" selected>minimal</option>
+                  <option value="birthday party">birthday party</option>
+                  <option value="luxury gold">luxury gold</option>
+                  <option value="cartoon">cartoon</option>
+                </select>
+              </div>
+
+              <div class="field" style="grid-column: 1 / -1;">
+                <label>Toppings</label>
+                <div class="check-row">
+                  <label class="check-pill">
+                    <input type="checkbox" name="toppings" value="macarons">
+                    <span>Macarons</span>
+                  </label>
+                  <label class="check-pill">
+                    <input type="checkbox" name="toppings" value="fruits">
+                    <span>Fruits</span>
+                  </label>
+                  <label class="check-pill">
+                    <input type="checkbox" name="toppings" value="gold foil">
+                    <span>Gold foil</span>
+                  </label>
+                  <label class="check-pill">
+                    <input type="checkbox" name="toppings" value="choco chips">
+                    <span>Choco chips</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="field" style="grid-column: 1 / -1;">
+                <label for="builder-message">Cake message</label>
+                <input id="builder-message" name="message" type="text" placeholder="Happy Birthday, Riya">
+              </div>
+            </form>
+
+            <div class="button-row">
+              <a class="button button-primary" href="./order/index.html" data-builder-link>Continue to full order form</a>
+              <a class="button button-secondary" href="./menu/index.html">Browse menu</a>
+            </div>
+          </div>
+
+          <aside class="builder-preview" data-reveal>
+            <article class="summary-card cake-stage">
+              <span class="eyebrow">Live preview</span>
+              <div class="preview-badges">
+                <span class="preview-badge" data-preview-shape-badge>round</span>
+                <span class="preview-badge" data-preview-theme-badge>minimal</span>
+                <span class="preview-badge" data-preview-topping-badge>0 toppings</span>
+              </div>
+              <div class="cake-visual" data-preview-cake data-shape="round">
+                <div class="cake-topper" data-preview-topper>The Vanilla Bean</div>
+                <div class="cake-layer" data-preview-layer data-flavour="vanilla">
+                  <div class="cake-frosting" data-preview-frosting data-cream="whipped cream"></div>
+                  <div class="cake-sprinkles">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="cake-layer" data-preview-layer data-flavour="vanilla">
+                  <div class="cake-frosting" data-preview-frosting data-cream="whipped cream"></div>
+                  <div class="cake-orbs">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="summary-card">
+              <h3>Preview notes</h3>
+              <div class="summary-list">
+                <div class="summary-row">
+                  <span>Design direction</span>
+                  <span data-preview-note>1 kg | vanilla | whipped cream</span>
+                </div>
+                <div class="summary-row">
+                  <span>Theme and message</span>
+                  <span data-preview-theme-note>minimal | no message yet</span>
+                </div>
+                <div class="summary-row">
+                  <span>Topping style</span>
+                  <span data-preview-toppings-note>No toppings selected</span>
+                </div>
+                <div class="summary-row">
+                  <span>Estimated base</span>
+                  <span data-preview-price>Rs. 1,199 estimated</span>
+                </div>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">How the flow works</span>
+              <h2>A polished journey from browsing to tracking.</h2>
+            </div>
+          </div>
+
+          <div class="process-grid" data-process></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Why guests keep returning</span>
+              <h2>Built around celebrations, quick cravings, and cafe comfort.</h2>
+            </div>
+            <a class="button button-ghost" href="./reviews/index.html">Open reviews</a>
+          </div>
+          <div class="review-grid" data-reviews></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Real bakery moments</span>
+              <h2>Storefront, interiors, desserts, and the working menu.</h2>
+            </div>
+            <a class="button button-ghost" href="./gallery/index.html">Open full gallery</a>
+          </div>
+          <div class="gallery-grid" data-gallery></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <div class="offer-banner" data-reveal>
+            <div>
+              <span class="eyebrow">Launch offer</span>
+              <h3 data-offer-headline>Launch Week Offer: 20% Off On Your First Celebration Order</h3>
+              <p data-offer-subline>
+                Use code SWEET20 for selected cake orders. Countdown resets for the demo build every time you reopen the site.
+              </p>
+              <div class="button-row">
+                <a class="button button-secondary" href="./order/index.html">Claim on order page</a>
+                <a class="button button-ghost" href="./offers/index.html">See offers and membership</a>
+              </div>
+            </div>
+
+            <div class="countdown" data-offer-countdown>
+              <div class="countdown__cell">
+                <strong data-countdown-days>00</strong>
+                <span>Days</span>
+              </div>
+              <div class="countdown__cell">
+                <strong data-countdown-hours>00</strong>
+                <span>Hours</span>
+              </div>
+              <div class="countdown__cell">
+                <strong data-countdown-minutes>00</strong>
+                <span>Minutes</span>
+              </div>
+              <div class="countdown__cell">
+                <strong data-countdown-seconds>00</strong>
+                <span>Seconds</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-shell">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Content engine</span>
+              <h2>Blog-style blocks to support SEO, Instagram, and repeat visits.</h2>
+            </div>
+            <a class="button button-ghost" href="./blog/index.html">Read all posts</a>
+          </div>
+          <div class="blog-grid" data-blog></div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="page-shell">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">FAQ</span>
+              <h2>Short answers for the most common order questions.</h2>
+            </div>
+          </div>
+          <div class="faq-grid" data-faq></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="page-shell">
+        <div class="footer-card panel">
+          <div>
+            <div class="brand-mark">
+              <div class="brand-mark__seal">VB</div>
+              <div class="brand-mark__text">
+                <strong data-brand-name>The Vanilla Bean</strong>
+                <span data-brand-tagline>Fresh Bake and Cafe</span>
+              </div>
+            </div>
+            <p class="lead-copy" style="margin-top: 16px;">
+              Custom cakes, pastries, coffee, cafe snacks, and local celebration ordering from
+              Durgapur.
+            </p>
+          </div>
+
+          <div>
+            <h3>Explore</h3>
+            <div class="footer-links">
+              <a href="./menu/index.html">Menu</a>
+              <a href="./gallery/index.html">Gallery</a>
+              <a href="./order/index.html">Order Online</a>
+              <a href="./track/index.html">Track Order</a>
+              <a href="./dashboard/index.html">Dashboard</a>
+              <a href="./offers/index.html">Offers</a>
+            </div>
+          </div>
+
+          <div>
+            <h3>Visit</h3>
+            <div class="meta-list">
+              <span data-location-text>A/7, Abanindranath Bithi, City Centre, Durgapur</span>
+              <a data-phone-link href="tel:+919036418049"><span data-phone-text>+91 90364 18049</span></a>
+              <a data-maps-link href="https://maps.app.goo.gl/GnFP8vZmwECDw2zQ9">Open location in Maps</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-note">
+          <span>© <span data-year></span> The Vanilla Bean. Built as a premium full-stack bakery website.</span>
+          <span>Mobile-first ordering • Trackable requests • Real bakery imagery</span>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="./public/js/data.js?v=20260329b"></script>
+    <script defer src="./public/js/shared.js?v=20260329b"></script>
+    <script defer src="./public/js/store.js?v=20260329b"></script>
+    <script defer src="./public/js/home.js"></script>
+  </body>
+</html>

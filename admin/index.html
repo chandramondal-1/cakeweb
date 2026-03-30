@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-site-root="..">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | The Vanilla Bean</title>
+    <meta
+      name="description"
+      content="Admin dashboard for The Vanilla Bean website with order status updates, filters, and message management."
+    >
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../public/css/styles.css?v=20260329b">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell">
+        <a class="brand-mark" href="../index.html">
+          <div class="brand-mark__seal">VB</div>
+          <div class="brand-mark__text">
+            <strong data-brand-name>The Vanilla Bean</strong>
+            <span data-brand-tagline>Fresh Bake and Cafe</span>
+          </div>
+        </a>
+        <nav class="site-nav" data-site-nav>
+          <a href="../index.html" data-nav-link>Home</a>
+          <a href="../about/index.html" data-nav-link>About</a>
+          <a href="../menu/index.html" data-nav-link>Menu</a>
+          <a href="../gallery/index.html" data-nav-link>Gallery</a>
+          <a href="../order/index.html" data-nav-link>Order</a>
+          <a href="../track/index.html" data-nav-link>Track</a>
+          <a href="../dashboard/index.html" data-nav-link>Dashboard</a>
+          <a href="../offers/index.html" data-nav-link>Offers</a>
+          <a href="../contact/index.html" data-nav-link>Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button button-primary" href="../order/index.html">Customer view</a>
+          <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="page-shell">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Admin dashboard</span>
+              <h1>Manage orders, update statuses, filter queues, and resolve customer messages.</h1>
+            </div>
+          </div>
+
+          <div class="panel login-panel" data-login-panel>
+            <form data-admin-login>
+              <span class="eyebrow">Demo login</span>
+              <h3>Enter the admin PIN</h3>
+              <p class="lead-copy">Use the demo PIN to open the operational dashboard. Replace this with real auth before launch.</p>
+              <div class="field">
+                <label for="admin-pin">PIN</label>
+                <input id="admin-pin" name="pin" type="password" placeholder="Enter demo PIN">
+              </div>
+              <div class="button-row">
+                <button class="button button-primary" type="submit">Open dashboard</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="hidden" data-admin-dashboard>
+            <div class="metric-grid" data-admin-metrics></div>
+            <div class="chip-row" style="margin-top: 20px;" data-status-pills></div>
+
+            <div class="table-card" style="margin-top: 24px;">
+              <div class="menu-toolbar">
+                <div>
+                  <span class="eyebrow">Order filters</span>
+                  <h3 style="margin-top: 16px;">Review and update order statuses</h3>
+                </div>
+                <div class="admin-toolbar">
+                  <input class="search-input" type="search" placeholder="Search customer or tracking ID" data-order-search>
+                  <select data-order-filter>
+                    <option value="all">All statuses</option>
+                  </select>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Tracking</th>
+                      <th>Customer</th>
+                      <th>Order</th>
+                      <th>Current status</th>
+                      <th>Update</th>
+                    </tr>
+                  </thead>
+                  <tbody data-orders-table></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="table-card" style="margin-top: 24px;">
+              <div class="menu-toolbar">
+                <div>
+                  <span class="eyebrow">Message queue</span>
+                  <h3 style="margin-top: 16px;">Respond and mark messages</h3>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Subject</th>
+                      <th>Contact</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody data-messages-table></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="page-shell">
+        <div class="footer-note">
+          <span>© <span data-year></span> The Vanilla Bean.</span>
+          <span>Order status tools • Filters • Message management</span>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="../public/js/data.js?v=20260329b"></script>
+    <script defer src="../public/js/shared.js?v=20260329b"></script>
+    <script defer src="../public/js/store.js?v=20260329b"></script>
+    <script defer src="../public/js/admin-page.js"></script>
+  </body>
+</html>

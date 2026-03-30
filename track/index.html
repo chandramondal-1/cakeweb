@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-site-root="..">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order | The Vanilla Bean</title>
+    <meta name="description" content="Track your The Vanilla Bean order request using the tracking ID generated at checkout.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../public/css/styles.css?v=20260329b">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell">
+        <a class="brand-mark" href="../index.html">
+          <div class="brand-mark__seal">VB</div>
+          <div class="brand-mark__text">
+            <strong data-brand-name>The Vanilla Bean</strong>
+            <span data-brand-tagline>Fresh Bake and Cafe</span>
+          </div>
+        </a>
+        <nav class="site-nav" data-site-nav>
+          <a href="../index.html" data-nav-link>Home</a>
+          <a href="../about/index.html" data-nav-link>About</a>
+          <a href="../menu/index.html" data-nav-link>Menu</a>
+          <a href="../gallery/index.html" data-nav-link>Gallery</a>
+          <a href="../order/index.html" data-nav-link>Order</a>
+          <a href="../track/index.html" data-nav-link>Track</a>
+          <a href="../dashboard/index.html" data-nav-link>Dashboard</a>
+          <a href="../offers/index.html" data-nav-link>Offers</a>
+          <a href="../contact/index.html" data-nav-link>Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button button-primary" href="../order/index.html">Order More</a>
+          <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="page-shell page-hero">
+          <div class="page-hero__copy" data-reveal>
+            <span class="eyebrow">Tracking</span>
+            <h1>Check the live status of your bakery request.</h1>
+            <p class="lead-copy">
+              Enter the tracking ID from the order confirmation panel and this page will fetch the
+              saved request instantly.
+            </p>
+          </div>
+          <div class="page-hero__visual" data-reveal>
+            <img src="../public/images/storefront-day.jpeg" alt="The Vanilla Bean bakery entrance">
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="page-shell order-layout">
+          <form class="form-card" data-track-form data-reveal>
+            <span class="eyebrow">Lookup</span>
+            <h3>Track by ID</h3>
+            <div class="field">
+              <label for="tracking-id">Tracking ID</label>
+              <input id="tracking-id" name="trackingId" type="text" placeholder="TVB-260328-1234">
+            </div>
+            <div class="button-row">
+              <button class="button button-primary" type="submit">Track now</button>
+            </div>
+          </form>
+
+          <div class="builder-preview">
+            <div class="summary-card" data-track-empty data-reveal>
+              <span class="eyebrow">Status panel</span>
+              <h3>No order loaded yet.</h3>
+              <p class="lead-copy">Once a valid tracking ID is entered, the current request details will appear here.</p>
+            </div>
+
+            <div class="hidden" data-track-result></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="page-shell">
+        <div class="footer-card panel">
+          <div>
+            <div class="brand-mark">
+              <div class="brand-mark__seal">VB</div>
+              <div class="brand-mark__text">
+                <strong data-brand-name>The Vanilla Bean</strong>
+                <span data-brand-tagline>Fresh Bake and Cafe</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3>Quick actions</h3>
+            <div class="footer-links">
+              <a href="../order/index.html">Place new order</a>
+              <a href="../contact/index.html">Talk to bakery</a>
+            </div>
+          </div>
+          <div>
+            <h3>Tracking use</h3>
+            <div class="meta-list">
+              <span>Instant order lookup</span>
+              <span>Status timeline</span>
+              <span>Delivery or pickup context</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-note">
+          <span>© <span data-year></span> The Vanilla Bean.</span>
+          <span>Tracking ID lookup • Order summary • Status timeline</span>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="../public/js/data.js?v=20260329b"></script>
+    <script defer src="../public/js/shared.js?v=20260329b"></script>
+    <script defer src="../public/js/store.js?v=20260329b"></script>
+    <script defer src="../public/js/track-page.js?v=20260329b"></script>
+  </body>
+</html>

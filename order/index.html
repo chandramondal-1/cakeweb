@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" data-site-root="..">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online | The Vanilla Bean</title>
+    <meta
+      name="description"
+      content="Build a custom cake, apply offers, save addresses, and checkout online at The Vanilla Bean."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../public/css/styles.css?v=20260329b">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell">
+        <a class="brand-mark" href="../index.html">
+          <div class="brand-mark__seal">VB</div>
+          <div class="brand-mark__text">
+            <strong data-brand-name>The Vanilla Bean</strong>
+            <span data-brand-tagline>Fresh Bake and Cafe</span>
+          </div>
+        </a>
+        <nav class="site-nav" data-site-nav>
+          <a href="../index.html" data-nav-link>Home</a>
+          <a href="../about/index.html" data-nav-link>About</a>
+          <a href="../menu/index.html" data-nav-link>Menu</a>
+          <a href="../gallery/index.html" data-nav-link>Gallery</a>
+          <a href="../order/index.html" data-nav-link>Order</a>
+          <a href="../track/index.html" data-nav-link>Track</a>
+          <a href="../dashboard/index.html" data-nav-link>Dashboard</a>
+          <a href="../offers/index.html" data-nav-link>Offers</a>
+          <a href="../contact/index.html" data-nav-link>Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button button-primary" href="../dashboard/index.html">Dashboard</a>
+          <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="page-shell page-hero">
+          <div class="page-hero__copy" data-reveal>
+            <span class="eyebrow">Custom Cake Builder Pro</span>
+            <h1>Build the cake, apply the offer, and checkout in one polished flow.</h1>
+            <p class="lead-copy">
+              This upgraded order page supports saved designs, live image previews, saved
+              addresses, payment methods, loyalty points, and a real checkout breakdown.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" href="../dashboard/index.html">Open dashboard</a>
+              <a class="button button-secondary" href="../offers/index.html">See offers</a>
+            </div>
+          </div>
+          <div class="page-hero__visual" data-reveal>
+            <img src="../public/images/display-counter.jpeg" alt="Bakery display counter">
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="page-shell order-layout order-layout--pro">
+          <form class="form-card" data-order-form data-reveal>
+            <span class="eyebrow">Customer profile</span>
+            <h3>Start with the customer details</h3>
+
+            <div class="field-grid">
+              <div class="field">
+                <label for="customer-name">Full name</label>
+                <input id="customer-name" name="customerName" type="text" required placeholder="Your name">
+              </div>
+
+              <div class="field">
+                <label for="customer-phone">Phone</label>
+                <input id="customer-phone" name="phone" type="tel" required placeholder="WhatsApp number">
+              </div>
+
+              <div class="field">
+                <label for="customer-email">Email</label>
+                <input id="customer-email" name="email" type="email" placeholder="Optional email for updates">
+              </div>
+
+              <div class="field">
+                <label for="occasion">Occasion</label>
+                <select id="occasion" name="occasion">
+                  <option>Birthday</option>
+                  <option>Anniversary</option>
+                  <option>Wedding</option>
+                  <option>Corporate</option>
+                  <option>General</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="delivery-date">Delivery or pickup date</label>
+                <input id="delivery-date" name="deliveryDate" type="date" required>
+              </div>
+
+              <div class="field">
+                <label for="time-slot">Preferred time</label>
+                <input id="time-slot" name="timeSlot" type="text" placeholder="6:00 PM to 7:00 PM">
+              </div>
+
+              <div class="field">
+                <label for="quantity">Quantity</label>
+                <input id="quantity" name="quantity" type="number" min="1" value="1">
+              </div>
+
+              <div class="field">
+                <label for="delivery-speed">Delivery speed</label>
+                <select id="delivery-speed" name="deliverySpeed">
+                  <option value="delivery">Standard delivery</option>
+                  <option value="express">Express delivery</option>
+                  <option value="midnight">Midnight delivery</option>
+                </select>
+              </div>
+
+              <div class="field" style="grid-column: 1 / -1;">
+                <label>Fulfillment method</label>
+                <div class="check-row">
+                  <label class="check-pill">
+                    <input type="radio" name="fulfillmentMethod" value="delivery" checked>
+                    <span>Delivery</span>
+                  </label>
+                  <label class="check-pill">
+                    <input type="radio" name="fulfillmentMethod" value="pickup">
+                    <span>Store pickup</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="address-label">Address label</label>
+                <input id="address-label" name="addressLabel" type="text" placeholder="Home, Office, Party venue">
+              </div>
+
+              <div class="field">
+                <label for="landmark">Landmark</label>
+                <input id="landmark" name="landmark" type="text" placeholder="Nearby landmark">
+              </div>
+
+              <div class="field" style="grid-column: 1 / -1;">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" placeholder="Delivery address or pickup note"></textarea>
+              </div>
+            </div>
+
+            <div class="info-strip hidden" data-customer-strip>
+              <strong data-customer-strip-title>Welcome back</strong>
+              <span data-customer-strip-copy>Saved dashboard details are ready to reuse.</span>
+            </div>
+
+            <div class="chip-row hidden" data-address-suggestions></div>
+
+            <div class="field" style="margin-top: 18px;">
+              <label class="check-pill" style="max-width: max-content;">
+                <input type="checkbox" name="saveAddress" checked>
+                <span>Save this address to dashboard</span>
+              </label>
+            </div>
+
+            <div class="divider"></div>
+
+            <span class="eyebrow">Ready-made menu item</span>
+            <div class="field" style="margin-top: 16px;">
+              <label for="item-id">Choose a menu product</label>
+              <select id="item-id" name="itemId"></select>
+            </div>
+
+            <div class="divider"></div>
+
+            <span class="eyebrow">Custom Cake Builder Pro</span>
+            <div class="field" style="margin-top: 16px;">
+              <label class="check-pill" style="max-width: max-content;">
+                <input type="checkbox" name="includeCustomCake">
+                <span>Include a custom cake build</span>
+              </label>
+            </div>
+
+            <div class="field-grid">
+              <div class="field">
+                <label for="shape">Shape</label>
+                <select id="shape" name="shape"></select>
+              </div>
+
+              <div class="field">
+                <label for="size">Size</label>
+                <select id="size" name="size">
+                  <option>0.5 kg</option>
+                  <option selected>1 kg</option>
+                  <option>1.5 kg</option>
+                  <option>2 kg</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="layers">Layers</label>
+                <select id="layers" name="layers"></select>
+              </div>
+
+              <div class="field">
+                <label for="flavour">Flavour</label>
+                <select id="flavour" name="flavour"></select>
+              </div>
+
+              <div class="field">
+                <label for="cream">Cream</label>
+                <select id="cream" name="cream"></select>
+              </div>
+
+              <div class="field">
+                <label for="filling">Filling</label>
+                <select id="filling" name="filling"></select>
+              </div>
+
+              <div class="field">
+                <label for="texture">Texture</label>
+                <select id="texture" name="texture"></select>
+              </div>
+
+              <div class="field">
+                <label for="topper">Topper style</label>
+                <select id="topper" name="topper"></select>
+              </div>
+
+              <div class="field">
+                <label for="dietary">Dietary preference</label>
+                <select id="dietary" name="dietary"></select>
+              </div>
+
+              <div class="field">
+                <label for="theme">Theme</label>
+                <input id="theme" name="theme" type="text" placeholder="Luxury gold, cartoon, floral, minimal">
+              </div>
+
+              <div class="field" style="grid-column: 1 / -1;">
+                <label>Frosting color</label>
+                <div class="color-options" data-color-options></div>
+                <input type="hidden" name="frostingColor" value="#f7e7c1">
+              </div>
+
+              <div class="field" style="grid-column: 1 / -1;">
+                <label>Toppings</label>
+                <div class="check-row" data-topping-options></div>
+              </div>
+
+              <div class="field" style="grid-column: 1 / -1;">
+                <label for="photo-reference">Photo link or inspiration note</label>
+                <input id="photo-reference" name="photoReference" type="text" placeholder="Drive link or theme description">
+              </div>
+
+              <div class="field" style="grid-column: 1 / -1;">
+                <label for="reference-upload">Upload reference image</label>
+                <input id="reference-upload" name="referenceUpload" type="file" accept="image/*">
+              </div>
+
+              <div class="field" style="grid-column: 1 / -1;">
+                <label for="cake-message">Cake message</label>
+                <input id="cake-message" name="cakeMessage" type="text" placeholder="Happy Anniversary">
+              </div>
+
+              <div class="field" style="grid-column: 1 / -1;">
+                <label for="design-label">Saved design label</label>
+                <input id="design-label" name="designLabel" type="text" placeholder="Riya birthday shortlist">
+              </div>
+
+              <div class="field" style="grid-column: 1 / -1;">
+                <label for="order-notes">Extra notes</label>
+                <textarea id="order-notes" name="notes" placeholder="Allergy info, color theme, delivery instructions..."></textarea>
+              </div>
+            </div>
+
+            <div class="button-row">
+              <button class="button button-secondary" type="button" data-save-design-button>Save design to dashboard</button>
+              <span class="helper" data-save-design-status>Saved designs appear inside the customer dashboard.</span>
+            </div>
+
+            <div class="field" style="margin-top: 18px;">
+              <label class="check-pill" style="max-width: max-content;">
+                <input type="checkbox" name="saveDesignOnCheckout">
+                <span>Save this custom design automatically when the order is placed</span>
+              </label>
+            </div>
+
+            <div class="chip-row hidden" data-design-suggestions></div>
+            <input type="hidden" name="savedDesignId" value="">
+            <input type="hidden" name="referenceImage" value="">
+
+            <div class="divider"></div>
+
+            <span class="eyebrow">Checkout</span>
+            <div class="field-grid" style="margin-top: 16px;">
+              <div class="field">
+                <label for="coupon-code">Coupon code</label>
+                <div class="inline-action">
+                  <input id="coupon-code" name="couponCode" type="text" placeholder="SWEET20">
+                  <button class="button button-secondary" type="button" data-apply-coupon>Apply</button>
+                </div>
+              </div>
+
+              <div class="field">
+                <label>Payment method</label>
+                <div class="payment-options" data-payment-options></div>
+              </div>
+            </div>
+
+            <div class="info-strip hidden" data-coupon-strip>
+              <strong data-coupon-title>Coupon applied</strong>
+              <span data-coupon-copy>SWEET20 is active on this checkout.</span>
+            </div>
+
+            <div class="info-strip" data-payment-strip>
+              <strong data-payment-title>Mobile UPI payment</strong>
+              <span data-payment-copy>
+                UPI apps will open on mobile with the final amount prefilled for 7811089216@ybl.
+              </span>
+            </div>
+
+            <div class="button-row">
+              <button class="button button-primary" type="submit">Place order request</button>
+              <a class="button button-ghost" href="../menu/index.html">Back to menu</a>
+            </div>
+            <p class="helper" data-submit-status>
+              After the order is saved, the payment button will open your UPI or Paytm app on mobile.
+            </p>
+          </form>
+
+          <aside class="builder-preview" data-reveal>
+            <article class="summary-card cake-stage cake-stage--checkout">
+              <span class="eyebrow">Live preview</span>
+              <div class="preview-badges">
+                <span class="preview-badge" data-live-shape>Round</span>
+                <span class="preview-badge" data-live-theme>Minimal</span>
+                <span class="preview-badge" data-live-toppings>0 toppings</span>
+              </div>
+              <div class="cake-visual" data-cake-visual data-shape="round"></div>
+
+              <div class="reference-preview" data-reference-preview>
+                <span>No reference image uploaded yet.</span>
+              </div>
+            </article>
+
+            <article class="summary-card">
+              <span class="eyebrow">Checkout summary</span>
+              <h3>Real-time pricing snapshot</h3>
+              <div class="summary-list">
+                <div class="summary-row">
+                  <span>Ready-made selection</span>
+                  <span data-summary-item>No ready-made item selected</span>
+                </div>
+                <div class="summary-row">
+                  <span>Custom build</span>
+                  <span data-summary-custom>No custom cake configuration yet</span>
+                </div>
+                <div class="summary-row">
+                  <span>Subtotal</span>
+                  <span data-summary-subtotal>Rs. 0</span>
+                </div>
+                <div class="summary-row">
+                  <span>Delivery fee</span>
+                  <span data-summary-delivery>Rs. 0</span>
+                </div>
+                <div class="summary-row">
+                  <span>Discount</span>
+                  <span data-summary-discount>Rs. 0</span>
+                </div>
+                <div class="summary-row">
+                  <span>Payment</span>
+                  <span data-summary-payment>UPI</span>
+                </div>
+                <div class="summary-row">
+                  <span>Pay to</span>
+                  <span data-summary-payee>7811089216 • 7811089216@ybl</span>
+                </div>
+                <div class="summary-row">
+                  <span>Loyalty points</span>
+                  <span data-summary-points>10 points</span>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="summary-row summary-row--strong">
+                <span>Total</span>
+                <span data-summary-total>Rs. 0</span>
+              </div>
+            </article>
+
+            <article class="summary-card hidden" data-success-panel>
+              <span class="eyebrow">Success</span>
+              <h3>Your order request is saved.</h3>
+              <p class="lead-copy">
+                Tracking ID:
+                <strong data-tracking-id>TVB-000000-0000</strong>
+              </p>
+              <div class="summary-list">
+                <div class="summary-row">
+                  <span>Points earned</span>
+                  <span data-earned-points>0 points</span>
+                </div>
+                <div class="summary-row">
+                  <span>Payment destination</span>
+                  <span data-payment-destination>7811089216 • 7811089216@ybl</span>
+                </div>
+              </div>
+              <div class="button-row">
+                <a class="button button-primary hidden" href="#" data-payment-link>Open payment app</a>
+                <a class="button button-ghost hidden" href="#" data-payment-copy-link>Copy UPI ID</a>
+                <a class="button button-primary" href="../track/index.html" data-track-link>Track this order</a>
+                <a class="button button-secondary" href="../dashboard/index.html" data-dashboard-link>Open dashboard</a>
+              </div>
+              <p class="helper hidden" data-payment-help>
+                If no app opens, use any UPI app and pay the same amount to 7811089216@ybl.
+              </p>
+            </article>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="page-shell">
+        <div class="footer-card panel">
+          <div>
+            <div class="brand-mark">
+              <div class="brand-mark__seal">VB</div>
+              <div class="brand-mark__text">
+                <strong data-brand-name>The Vanilla Bean</strong>
+                <span data-brand-tagline>Fresh Bake and Cafe</span>
+              </div>
+            </div>
+            <p class="lead-copy" style="margin-top: 16px;">
+              Use the upgraded checkout for saved designs, loyalty points, and clearer order pricing.
+            </p>
+          </div>
+          <div>
+            <h3>Customer tools</h3>
+            <div class="footer-links">
+              <a href="../dashboard/index.html">Dashboard</a>
+              <a href="../track/index.html">Track order</a>
+              <a href="../offers/index.html">Offers</a>
+            </div>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <div class="meta-list">
+              <a data-phone-link href="tel:+919036418049">Call the team</a>
+              <a href="../contact/index.html">Contact bakery</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-note">
+          <span>© <span data-year></span> The Vanilla Bean.</span>
+          <span>Custom Cake Builder Pro • Real checkout • Saved dashboard details</span>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="../public/js/data.js?v=20260329b"></script>
+    <script defer src="../public/js/shared.js?v=20260329b"></script>
+    <script defer src="../public/js/store.js?v=20260329b"></script>
+    <script defer src="../public/js/order-page.js?v=20260329b"></script>
+  </body>
+</html>

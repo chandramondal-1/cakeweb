@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://thevanillabean.example/</loc>
+  </url>
+  <url>
+    <loc>https://thevanillabean.example/about</loc>
+  </url>
+  <url>
+    <loc>https://thevanillabean.example/menu</loc>
+  </url>
+  <url>
+    <loc>https://thevanillabean.example/gallery</loc>
+  </url>
+  <url>
+    <loc>https://thevanillabean.example/order</loc>
+  </url>
+  <url>
+    <loc>https://thevanillabean.example/track</loc>
+  </url>
+  <url>
+    <loc>https://thevanillabean.example/contact</loc>
+  </url>
+</urlset>

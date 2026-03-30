@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-site-root="..">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | The Vanilla Bean</title>
+    <meta name="description" content="Contact The Vanilla Bean for cake enquiries, bulk orders, events, corporate gifting, and cafe questions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../public/css/styles.css?v=20260329b">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell">
+        <a class="brand-mark" href="../index.html">
+          <div class="brand-mark__seal">VB</div>
+          <div class="brand-mark__text">
+            <strong data-brand-name>The Vanilla Bean</strong>
+            <span data-brand-tagline>Fresh Bake and Cafe</span>
+          </div>
+        </a>
+        <nav class="site-nav" data-site-nav>
+          <a href="../index.html" data-nav-link>Home</a>
+          <a href="../about/index.html" data-nav-link>About</a>
+          <a href="../menu/index.html" data-nav-link>Menu</a>
+          <a href="../gallery/index.html" data-nav-link>Gallery</a>
+          <a href="../order/index.html" data-nav-link>Order</a>
+          <a href="../track/index.html" data-nav-link>Track</a>
+          <a href="../dashboard/index.html" data-nav-link>Dashboard</a>
+          <a href="../offers/index.html" data-nav-link>Offers</a>
+          <a href="../contact/index.html" data-nav-link>Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button button-primary" href="../order/index.html">Start order</a>
+          <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="page-shell page-hero">
+          <div class="page-hero__copy" data-reveal>
+            <span class="eyebrow">Contact and enquiries</span>
+            <h1>Reach the bakery for custom cakes, events, and corporate orders.</h1>
+            <p class="lead-copy">
+              Use this form for bulk orders, wedding consultations, delivery questions, or anything
+              that needs direct coordination.
+            </p>
+          </div>
+          <div class="page-hero__visual" data-reveal>
+            <img src="../public/images/storefront-night.jpeg" alt="The Vanilla Bean storefront at night">
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="page-shell order-layout">
+          <form class="form-card" data-contact-form data-reveal>
+            <span class="eyebrow">Send an enquiry</span>
+            <h3>Talk to the team</h3>
+            <div class="field-grid">
+              <div class="field">
+                <label for="contact-name">Full name</label>
+                <input id="contact-name" name="customerName" type="text" required placeholder="Your name">
+              </div>
+              <div class="field">
+                <label for="contact-phone">Phone</label>
+                <input id="contact-phone" name="phone" type="tel" placeholder="Mobile number">
+              </div>
+              <div class="field">
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="email" type="email" placeholder="Email address">
+              </div>
+              <div class="field">
+                <label for="contact-subject">Subject</label>
+                <select id="contact-subject" name="subject">
+                  <option>Custom cake enquiry</option>
+                  <option>Corporate order</option>
+                  <option>Wedding consultation</option>
+                  <option>Bulk gifting</option>
+                  <option>General enquiry</option>
+                </select>
+              </div>
+              <div class="field" style="grid-column: 1 / -1;">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" required placeholder="Tell the bakery what you need."></textarea>
+              </div>
+            </div>
+            <div class="button-row">
+              <button class="button button-primary" type="submit">Send enquiry</button>
+            </div>
+          </form>
+
+          <div class="builder-preview">
+            <article class="summary-card" data-reveal>
+              <span class="eyebrow">Visit or call</span>
+              <h3>Bakery details</h3>
+              <div class="summary-list">
+                <div class="summary-row">
+                  <span>Location</span>
+                  <span data-contact-location>A/7, Abanindranath Bithi, City Centre, Durgapur</span>
+                </div>
+                <div class="summary-row">
+                  <span>Hours</span>
+                  <span data-contact-hours>Open daily, 9:00 AM - 10:30 PM</span>
+                </div>
+                <div class="summary-row">
+                  <span>Phone</span>
+                  <span data-contact-phone>+91 90364 18049</span>
+                </div>
+              </div>
+              <div class="button-row">
+                <a class="button button-primary" data-phone-link href="tel:+919036418049">Call now</a>
+                <a class="button button-secondary" data-maps-link href="https://maps.app.goo.gl/GnFP8vZmwECDw2zQ9">Open map</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="page-shell">
+        <div class="footer-card panel">
+          <div>
+            <div class="brand-mark">
+              <div class="brand-mark__seal">VB</div>
+              <div class="brand-mark__text">
+                <strong data-brand-name>The Vanilla Bean</strong>
+                <span data-brand-tagline>Fresh Bake and Cafe</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3>For business</h3>
+            <div class="footer-links">
+              <a href="../contact/index.html">Corporate orders</a>
+              <a href="../contact/index.html">Wedding cakes</a>
+              <a href="../contact/index.html">Event desserts</a>
+            </div>
+          </div>
+          <div>
+            <h3>Response flow</h3>
+            <div class="meta-list">
+              <span>Message saved to backend</span>
+              <span>Visible to the bakery team</span>
+              <span>Easy follow-up workflow</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-note">
+          <span>© <span data-year></span> The Vanilla Bean.</span>
+          <span>Lead capture • Contact details • Bakery enquiries</span>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="../public/js/data.js?v=20260329b"></script>
+    <script defer src="../public/js/shared.js?v=20260329b"></script>
+    <script defer src="../public/js/store.js?v=20260329b"></script>
+    <script defer src="../public/js/contact-page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-site-root="..">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | The Vanilla Bean</title>
+    <meta name="description" content="Read bakery guides, cafe journal posts, and celebration ideas from The Vanilla Bean.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../public/css/styles.css?v=20260329b">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell">
+        <a class="brand-mark" href="../index.html">
+          <div class="brand-mark__seal">VB</div>
+          <div class="brand-mark__text">
+            <strong data-brand-name>The Vanilla Bean</strong>
+            <span data-brand-tagline>Fresh Bake and Cafe</span>
+          </div>
+        </a>
+        <nav class="site-nav" data-site-nav>
+          <a href="../index.html" data-nav-link>Home</a>
+          <a href="../about/index.html" data-nav-link>About</a>
+          <a href="../menu/index.html" data-nav-link>Menu</a>
+          <a href="../gallery/index.html" data-nav-link>Gallery</a>
+          <a href="../order/index.html" data-nav-link>Order</a>
+          <a href="../track/index.html" data-nav-link>Track</a>
+          <a href="../dashboard/index.html" data-nav-link>Dashboard</a>
+          <a href="../offers/index.html" data-nav-link>Offers</a>
+          <a href="../contact/index.html" data-nav-link>Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button button-primary" href="../order/index.html">Order Now</a>
+          <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" data-blog-list-view>
+        <div class="page-shell">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Bakery Journal</span>
+              <h1>Stories, guides, and menu ideas that support repeat visits.</h1>
+            </div>
+            <p class="lead-copy">
+              These article pages are built for SEO and for real customer use: celebration advice,
+              cafe pairing ideas, and product recommendations.
+            </p>
+          </div>
+          <div class="blog-grid blog-grid--expanded" data-blog-list></div>
+        </div>
+      </section>
+
+      <section class="section hidden" data-blog-detail-view>
+        <div class="page-shell post-layout">
+          <article class="post-card">
+            <div data-blog-detail></div>
+          </article>
+          <aside class="summary-card">
+            <span class="eyebrow">Related posts</span>
+            <div class="post-related" data-blog-related></div>
+            <div class="button-row">
+              <a class="button button-secondary" href="../order/index.html">Order a cake</a>
+              <a class="button button-ghost" href="../blog/index.html">Back to blog</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="page-shell">
+        <div class="footer-note">
+          <span>© <span data-year></span> The Vanilla Bean.</span>
+          <span>Article listing • Detail views • SEO-ready content blocks</span>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="../public/js/data.js?v=20260329b"></script>
+    <script defer src="../public/js/shared.js?v=20260329b"></script>
+    <script defer src="../public/js/store.js?v=20260329b"></script>
+    <script defer src="../public/js/blog-page.js"></script>
+  </body>
+</html>

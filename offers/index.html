@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-site-root="..">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers and Membership | The Vanilla Bean</title>
+    <meta name="description" content="Explore coupons, loyalty tiers, and Vanilla Circle membership benefits at The Vanilla Bean.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../public/css/styles.css?v=20260329b">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell">
+        <a class="brand-mark" href="../index.html">
+          <div class="brand-mark__seal">VB</div>
+          <div class="brand-mark__text">
+            <strong data-brand-name>The Vanilla Bean</strong>
+            <span data-brand-tagline>Fresh Bake and Cafe</span>
+          </div>
+        </a>
+        <nav class="site-nav" data-site-nav>
+          <a href="../index.html" data-nav-link>Home</a>
+          <a href="../about/index.html" data-nav-link>About</a>
+          <a href="../menu/index.html" data-nav-link>Menu</a>
+          <a href="../gallery/index.html" data-nav-link>Gallery</a>
+          <a href="../order/index.html" data-nav-link>Order</a>
+          <a href="../track/index.html" data-nav-link>Track</a>
+          <a href="../dashboard/index.html" data-nav-link>Dashboard</a>
+          <a href="../offers/index.html" data-nav-link>Offers</a>
+          <a href="../contact/index.html" data-nav-link>Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button button-primary" href="../dashboard/index.html">Dashboard</a>
+          <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="page-shell page-hero">
+          <div class="page-hero__copy" data-reveal>
+            <span class="eyebrow">Offers and Membership</span>
+            <h1 data-offers-headline>Offers, loyalty, and referral rewards built for repeat celebrations.</h1>
+            <p class="lead-copy" data-membership-copy>
+              Join Vanilla Circle, collect loyalty points, and keep every celebration easier to reorder.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" href="../order/index.html">Use offers at checkout</a>
+              <a class="button button-secondary" href="../dashboard/index.html">Open dashboard</a>
+            </div>
+          </div>
+          <div class="page-hero__visual" data-reveal>
+            <img src="../public/images/storefront-day.jpeg" alt="The Vanilla Bean storefront">
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="page-shell">
+          <div class="card-grid card-grid--offers" data-offer-cards></div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="page-shell dashboard-grid">
+          <article class="summary-card">
+            <span class="eyebrow">Coupon vault</span>
+            <h3>Available offer codes</h3>
+            <div class="coupon-grid" data-coupon-grid></div>
+          </article>
+          <article class="summary-card">
+            <span class="eyebrow">Join Vanilla Circle</span>
+            <h3>Activate membership</h3>
+            <p class="lead-copy">Welcome points and dashboard rewards are unlocked after signup.</p>
+            <form class="field-grid" data-membership-form>
+              <div class="field">
+                <label for="member-name">Name</label>
+                <input id="member-name" name="name" type="text" placeholder="Your name">
+              </div>
+              <div class="field">
+                <label for="member-phone">Phone</label>
+                <input id="member-phone" name="phone" type="tel" placeholder="Phone used for orders">
+              </div>
+              <div class="field" style="grid-column: 1 / -1;">
+                <label for="member-email">Email</label>
+                <input id="member-email" name="email" type="email" placeholder="Optional email">
+              </div>
+              <div class="field dashboard-field-end" style="grid-column: 1 / -1;">
+                <button class="button button-primary" type="submit">Join membership</button>
+              </div>
+            </form>
+            <div class="info-strip hidden" data-membership-strip>
+              <strong data-membership-strip-title>Membership active</strong>
+              <span data-membership-strip-copy>Welcome points were added successfully.</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="page-shell">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Tier system</span>
+              <h2>Rewards scale with repeat celebrations.</h2>
+            </div>
+          </div>
+          <div class="tier-grid" data-tier-grid></div>
+          <div class="summary-card" style="margin-top: 24px;">
+            <h3>Membership benefits</h3>
+            <ul class="admin-list" data-membership-benefits></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="page-shell">
+        <div class="footer-note">
+          <span>© <span data-year></span> The Vanilla Bean.</span>
+          <span>Coupon engine • Loyalty tiers • Referral-ready membership</span>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="../public/js/data.js?v=20260329b"></script>
+    <script defer src="../public/js/shared.js?v=20260329b"></script>
+    <script defer src="../public/js/store.js?v=20260329b"></script>
+    <script defer src="../public/js/offers-page.js"></script>
+  </body>
+</html>

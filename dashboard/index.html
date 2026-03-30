@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-site-root="..">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard | The Vanilla Bean</title>
+    <meta
+      name="description"
+      content="See order history, saved addresses, loyalty rewards, and saved cake designs in the Vanilla Bean customer dashboard."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../public/css/styles.css?v=20260329b">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell">
+        <a class="brand-mark" href="../index.html">
+          <div class="brand-mark__seal">VB</div>
+          <div class="brand-mark__text">
+            <strong data-brand-name>The Vanilla Bean</strong>
+            <span data-brand-tagline>Fresh Bake and Cafe</span>
+          </div>
+        </a>
+        <nav class="site-nav" data-site-nav>
+          <a href="../index.html" data-nav-link>Home</a>
+          <a href="../about/index.html" data-nav-link>About</a>
+          <a href="../menu/index.html" data-nav-link>Menu</a>
+          <a href="../gallery/index.html" data-nav-link>Gallery</a>
+          <a href="../order/index.html" data-nav-link>Order</a>
+          <a href="../track/index.html" data-nav-link>Track</a>
+          <a href="../dashboard/index.html" data-nav-link>Dashboard</a>
+          <a href="../offers/index.html" data-nav-link>Offers</a>
+          <a href="../contact/index.html" data-nav-link>Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button button-primary" href="../order/index.html">Order Now</a>
+          <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="page-shell page-hero">
+          <div class="page-hero__copy" data-reveal>
+            <span class="eyebrow">Customer Dashboard</span>
+            <h1>Saved designs, saved addresses, rewards, and reorder tools in one place.</h1>
+            <p class="lead-copy">
+              Use the same phone number from checkout to reopen your dashboard and manage repeat
+              orders faster.
+            </p>
+          </div>
+          <div class="page-hero__visual" data-reveal>
+            <img src="../public/images/storefront-night.jpeg" alt="The Vanilla Bean storefront at night">
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="page-shell dashboard-shell">
+          <article class="form-card" data-reveal>
+            <span class="eyebrow">Lookup</span>
+            <h3>Open your customer dashboard</h3>
+            <form class="field-grid" data-dashboard-form>
+              <div class="field">
+                <label for="dashboard-phone">Phone number</label>
+                <input id="dashboard-phone" name="phone" type="tel" placeholder="Use the order phone number">
+              </div>
+              <div class="field dashboard-field-end">
+                <button class="button button-primary" type="submit">Load dashboard</button>
+              </div>
+            </form>
+            <p class="helper">No password is required in this demo build. Phone number is used as the lookup key.</p>
+          </article>
+
+          <article class="summary-card" data-reveal>
+            <span class="eyebrow">Vanilla Circle</span>
+            <h3 data-dashboard-tier>Classic</h3>
+            <p class="lead-copy" data-dashboard-tier-copy>
+              Join the membership from the offers page to unlock welcome points and referral rewards.
+            </p>
+            <div class="button-row">
+              <a class="button button-secondary" href="../offers/index.html">Open offers</a>
+              <a class="button button-ghost" href="../reviews/index.html">Read reviews</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section compact hidden" data-dashboard-results>
+        <div class="page-shell">
+          <div class="metric-grid" data-dashboard-metrics></div>
+
+          <div class="dashboard-grid" style="margin-top: 24px;">
+            <article class="summary-card" data-membership-card></article>
+            <article class="summary-card">
+              <span class="eyebrow">Saved addresses</span>
+              <h3>Address book</h3>
+              <div class="address-list" data-address-list></div>
+              <div class="divider"></div>
+              <form class="field-grid" data-address-form>
+                <input type="hidden" name="phone">
+                <div class="field">
+                  <label for="address-form-label">Label</label>
+                  <input id="address-form-label" name="label" type="text" placeholder="Home, Office, Venue">
+                </div>
+                <div class="field">
+                  <label for="address-form-landmark">Landmark</label>
+                  <input id="address-form-landmark" name="landmark" type="text" placeholder="Nearby landmark">
+                </div>
+                <div class="field" style="grid-column: 1 / -1;">
+                  <label for="address-form-line">Address</label>
+                  <textarea id="address-form-line" name="addressLine" placeholder="Complete address"></textarea>
+                </div>
+                <div class="field">
+                  <label class="check-pill" style="max-width: max-content;">
+                    <input type="checkbox" name="isDefault" checked>
+                    <span>Make default</span>
+                  </label>
+                </div>
+                <div class="field dashboard-field-end">
+                  <button class="button button-secondary" type="submit">Save address</button>
+                </div>
+              </form>
+            </article>
+          </div>
+
+          <section class="section compact dashboard-subsection">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">Saved designs</span>
+                <h2>Reusable custom cake ideas.</h2>
+              </div>
+              <a class="button button-secondary" href="../order/index.html">Create another design</a>
+            </div>
+            <div class="design-grid" data-design-grid></div>
+          </section>
+
+          <section class="section compact dashboard-subsection">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">Order history</span>
+                <h2>Reorder favorites or jump back into tracking.</h2>
+              </div>
+            </div>
+            <div class="table-card">
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Tracking ID</th>
+                      <th>Occasion</th>
+                      <th>Status</th>
+                      <th>Total</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody data-order-history></tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="page-shell">
+        <div class="footer-card panel">
+          <div>
+            <div class="brand-mark">
+              <div class="brand-mark__seal">VB</div>
+              <div class="brand-mark__text">
+                <strong data-brand-name>The Vanilla Bean</strong>
+                <span data-brand-tagline>Fresh Bake and Cafe</span>
+              </div>
+            </div>
+            <p class="lead-copy" style="margin-top: 16px;">
+              Dashboard access makes it easier to repeat a celebration without rebuilding the same order every time.
+            </p>
+          </div>
+          <div>
+            <h3>Explore</h3>
+            <div class="footer-links">
+              <a href="../offers/index.html">Offers</a>
+              <a href="../blog/index.html">Blog</a>
+              <a href="../reviews/index.html">Reviews</a>
+            </div>
+          </div>
+          <div>
+            <h3>Quick links</h3>
+            <div class="meta-list">
+              <a href="../order/index.html">Place an order</a>
+              <a href="../track/index.html">Track order</a>
+              <a href="../contact/index.html">Contact bakery</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-note">
+          <span>© <span data-year></span> The Vanilla Bean.</span>
+          <span>Order history • Saved designs • Loyalty rewards</span>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="../public/js/data.js?v=20260329b"></script>
+    <script defer src="../public/js/shared.js?v=20260329b"></script>
+    <script defer src="../public/js/store.js?v=20260329b"></script>
+    <script defer src="../public/js/dashboard-page.js"></script>
+  </body>
+</html>

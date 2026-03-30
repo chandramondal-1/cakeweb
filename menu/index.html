@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-site-root="..">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | The Vanilla Bean</title>
+    <meta name="description" content="Browse cakes, pastries, cookies, coffee, mocktails, pizza, sandwiches, and savory cafe bites at The Vanilla Bean.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../public/css/styles.css?v=20260329b">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell">
+        <a class="brand-mark" href="../index.html">
+          <div class="brand-mark__seal">VB</div>
+          <div class="brand-mark__text">
+            <strong data-brand-name>The Vanilla Bean</strong>
+            <span data-brand-tagline>Fresh Bake and Cafe</span>
+          </div>
+        </a>
+        <nav class="site-nav" data-site-nav>
+          <a href="../index.html" data-nav-link>Home</a>
+          <a href="../about/index.html" data-nav-link>About</a>
+          <a href="../menu/index.html" data-nav-link>Menu</a>
+          <a href="../gallery/index.html" data-nav-link>Gallery</a>
+          <a href="../order/index.html" data-nav-link>Order</a>
+          <a href="../track/index.html" data-nav-link>Track</a>
+          <a href="../dashboard/index.html" data-nav-link>Dashboard</a>
+          <a href="../offers/index.html" data-nav-link>Offers</a>
+          <a href="../contact/index.html" data-nav-link>Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="button button-primary" href="../order/index.html">Order Now</a>
+          <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="page-shell page-hero">
+          <div class="page-hero__copy" data-reveal>
+            <span class="eyebrow">Cafe menu</span>
+            <h1 data-menu-hero>The Vanilla Bean Menu</h1>
+            <p class="lead-copy" data-menu-copy>
+              Explore cakes, pastries, coffee, mocktails, cookies, puffs, sandwiches, and quick cafe meals in one polished menu.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" href="../order/index.html">Start order</a>
+              <a class="button button-secondary" data-phone-link href="tel:+919036418049">Call the bakery</a>
+            </div>
+          </div>
+
+          <div class="page-hero__visual" data-reveal>
+            <img src="../public/images/menu-card-bakery.jpeg" alt="The Vanilla Bean menu card">
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="page-shell">
+          <div class="panel">
+            <div class="menu-toolbar">
+              <div class="chip-row" data-menu-filters></div>
+              <div class="field search-input">
+                <label for="menu-search">Search the menu</label>
+                <input id="menu-search" type="search" data-menu-search placeholder="Search cakes, coffee, pastries, puffs...">
+              </div>
+            </div>
+
+            <div data-menu-groups></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="page-shell">
+        <div class="footer-card panel">
+          <div>
+            <div class="brand-mark">
+              <div class="brand-mark__seal">VB</div>
+              <div class="brand-mark__text">
+                <strong data-brand-name>The Vanilla Bean</strong>
+                <span data-brand-tagline>Fresh Bake and Cafe</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3>Next step</h3>
+            <div class="footer-links">
+              <a href="../order/index.html">Order online</a>
+              <a href="../track/index.html">Track request</a>
+              <a href="../gallery/index.html">Open gallery</a>
+            </div>
+          </div>
+          <div>
+            <h3>Call</h3>
+            <div class="meta-list">
+              <a data-phone-link href="tel:+919036418049"><span data-phone-text>+91 90364 18049</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-note">
+          <span>© <span data-year></span> The Vanilla Bean.</span>
+          <span>Dynamic menu rendering • Search • Quick order links</span>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="../public/js/data.js?v=20260329b"></script>
+    <script defer src="../public/js/shared.js?v=20260329b"></script>
+    <script defer src="../public/js/store.js?v=20260329b"></script>
+    <script defer src="../public/js/menu-page.js"></script>
+  </body>
+</html>
